@@ -8,6 +8,8 @@ module.exports = {
         "defaultParams": true,
         "destructuring": true,
         "forOf": true,
+        "generators": true,
+        "modules": true,
         "objectLiteralComputedProperties": true,
         "objectLiteralShorthandMethods": true,
         "objectLiteralShorthandProperties": true,
