@@ -1,0 +1,27 @@
+{
+  "name": "eslint-config-vkbansal",
+  "version": "0.1.0",
+  "description": "Shareable eslint config",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vkbansal/eslint-config-vkbansal.git"
+  },
+  "keywords": [
+    "eslint-config"
+  ],
+  "author": "Vivek Kumar Bansal <contact@vkbansal.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vkbansal/eslint-config-vkbansal/issues"
+  },
+  "homepage": "https://github.com/vkbansal/eslint-config-vkbansal#readme",
+  "peerDependencies": {
+    "babel-eslint": "^5.0.0-beta4",
+    "eslint": "^1.10.3",
+    "eslint-plugin-react": "3.11.3"
+  }
+}
