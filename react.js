@@ -15,7 +15,7 @@ module.exports = {
         "react/jsx-boolean-value": [2, "never"],
         "react/jsx-closing-bracket-location": [1, {"location": "after-props"}],
         "react/jsx-curly-spacing": [2, "never"],
-        "jsx-handler-names": [1, {
+        "react/jsx-handler-names": [1, {
             "eventHandlerPrefix": "handle",
             "eventHandlerPropPrefix": "on"
         }],
