@@ -16,7 +16,7 @@ module.exports = {
         "react/jsx-closing-bracket-location": [1, {"location": "after-props"}],
         "react/jsx-curly-spacing": [2, "never"],
         "jsx-handler-names": [1, {
-            "eventHandlerPrefix": "handle"
+            "eventHandlerPrefix": "handle",
             "eventHandlerPropPrefix": "on"
         }],
         "react/jsx-indent-props": [1, 4],
