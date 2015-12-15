@@ -20,10 +20,10 @@
   },
   "homepage": "https://github.com/vkbansal/eslint-config-vkbansal#readme",
   "peerDependencies": {
-    "babel-eslint": "^5.0.0-beta4",
     "eslint": "^1.10.3"
   },
   "optionalDependencies": {
+    "babel-eslint": "^5.0.0-beta6",
     "eslint-plugin-react": "3.11.3"
   }
 }
