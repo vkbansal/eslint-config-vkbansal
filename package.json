@@ -24,6 +24,6 @@
   },
   "optionalDependencies": {
     "babel-eslint": "^5.0.0-beta6",
-    "eslint-plugin-react": "3.11.3"
+    "eslint-plugin-react": "3.14.0"
   }
 }

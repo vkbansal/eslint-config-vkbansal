@@ -20,8 +20,10 @@ module.exports = {
             "eventHandlerPropPrefix": "on"
         }],
         "react/jsx-indent-props": [1, 4],
+        "react/jsx-indent": 1,
         "react/jsx-key": 2,
         "react/jsx-max-props-per-line": 0,
+        "react/jsx-no-bind": 0,
         "react/jsx-no-duplicate-props": [2, {
             "ignoreCase": true
         }],
@@ -36,10 +38,12 @@ module.exports = {
         "react/no-danger": 2,
         "react/no-did-mount-set-state": [1, "allowed-in-func"],
         "react/no-did-update-set-state": 1,
+        "react/no-direct-mutation-state": 2,
+        "react/no-is-mounted": 2,
         "react/no-multi-comp": 1,
         "react/no-set-state": 1,
         "react/no-unknown-property": 1,
-        "react/prefer-es6-class": 1,
+        "react/prefer-es6-class": 0,
         "react/prop-types": 0,
         "react/react-in-jsx-scope": 1,
         "react/require-extension": 0,
