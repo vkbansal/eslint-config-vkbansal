@@ -27,11 +27,15 @@ You can override settings from the shareable config by adding them directly into
 
 
 ### React/JSX
-This package also includes a shareable config to be used with `React` or `JSX`. Just add this to your .eslintrc file:
+This package also includes a shareable config to be used with `React` or `JSX`. Just add this to your `.eslintrc` file:
 
 ```
 {
-  "extends": ["vkbansal", "vkbansal/react"]
+  "extends": [
+    "vkbansal",
+    "vkbansal/react",
+    "vkbansal/jsx-control-statements"
+  ]
 }
 ```
 
