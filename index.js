@@ -65,14 +65,12 @@ module.exports = {
         "curly": [2, "multi-line"],
         "default-case": 0,
         "dot-location": 0,
-        "dot-notation": [2, {
-            "allowKeywords": true,
-            "allowPattern": "^[a-z]+(_[a-z]+)+$"
-        }],
+        "dot-notation": [2, { "allowKeywords": true, "allowPattern": "^[a-z]+(_[a-z]+)+$"}],
         "eqeqeq": 2,
         "guard-for-in": 2,
         "no-alert": 1,
         "no-caller": 2,
+        "no-case-declarations": 2,
         "no-div-regex": 0,
         "no-else-return": 2,
         "no-empty-label": 2,
@@ -129,11 +127,8 @@ module.exports = {
         "no-catch-shadow": 0,
         "no-delete-var": 2,
         "no-label-var": 2,
-        /*"no-shadow-resticted-names": 2,*/
-        /*"no-shadow": [2, {
-            "builtinGlobals": true,
-            "hoist": "all"
-        }],*/
+        // "no-shadow-resticted-names": 2,
+        // "no-shadow": [2, {"builtinGlobals": true, "hoist": "all"}],
         "no-undef-init": 2,
         "no-undef": 2,
         "no-undefined": 2,
@@ -167,10 +162,8 @@ module.exports = {
         "func-style": 0,
         "id-length": 0,
         "id-match": 0,
-        "indent": [2, 4, {
-            "SwitchCase": 1,
-            "VariableDeclarator": { "var": 1, "let": 1, "const": 1}
-        }],
+        "indent": [2, 4, {"SwitchCase": 1, "VariableDeclarator": {"var": 1, "let": 1, "const": 1}}],
+        "jsx-quotes": 0,
         "key-spacing": [1, {"beforeColon": false, "afterColon": true}],
         "linebreak-style": [2, "unix"],
         "lines-around-comment": 1,
@@ -179,10 +172,7 @@ module.exports = {
         "max-nested-callbacks": 0,
         "max-params": [1, 4],
         "max-statements": 1,
-        "new-cap": [2, {
-            "newIsCap": true,
-            "capIsNew": false
-        }],
+        "new-cap": [2, {"newIsCap": true, "capIsNew": false}],
         "new-parens": 2,
         "newline-after-var": [1, "always"],
         "no-array-constructor": 2,
@@ -215,10 +205,7 @@ module.exports = {
         "sort-vars": 0,
         "space-after-keywords": [2, "always"],
         "space-before-blocks": 2,
-        "space-before-function-paren": [1, {
-            "anonymous": "never",
-            "named": "never"
-        }],
+        "space-before-function-paren": [1, {"anonymous": "never", "named": "never"}],
         "space-before-keywords": [2, "always"],
         "space-in-parens": [2, "never"],
         "space-infix-ops": 2,
@@ -237,7 +224,7 @@ module.exports = {
          "no-arrow-condition": 1,
          "no-class-assign": 2,
          "no-const-assign": 2,
-         /*"no-dupe-class-memnbers": 2,*/
+         // "no-dupe-class-memnbers": 2,
          "no-this-before-super": 2,
          "no-var": 1,
          "object-shorthand": [1, "always"],
