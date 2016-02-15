@@ -4,8 +4,10 @@ module.exports = {
     "plugins": [
         "react"
     ],
-    "ecmaFeatures": {
-        "jsx": true
+    "parserOptions" : {
+        "ecmaFeatures": {
+            "jsx": true
+        }
     },
     "rules": {
         "jsx-quotes": [1, "prefer-double"],
@@ -30,13 +32,13 @@ module.exports = {
         "react/jsx-no-literals": 0,
         "react/jsx-no-undef": 2,
         "react/jsx-pascal-case": 1,
-        "react/jsx-sort-prop-types": [2, { "ignoreCase": true }],
         "react/jsx-sort-props": 0,
+        "react/jsx-space-before-closing": [1, "never"],
         "react/jsx-uses-react": 2,
         "react/jsx-uses-vars": 1,
         "react/no-danger": 2,
         "react/no-deprecated": 1,
-        "react/no-did-mount-set-state": [1, "allowed-in-func"],
+        "react/no-did-mount-set-state": 1,
         "react/no-did-update-set-state": 1,
         "react/no-direct-mutation-state": 2,
         "react/no-is-mounted": 2,
@@ -49,6 +51,7 @@ module.exports = {
         "react/require-extension": 0,
         "react/self-closing-comp": 1,
         "react/sort-comp": 1,
+        "react/sort-prop-types": [2, { "ignoreCase": true, "callbacksLast": true, "requiredFirst": true}],
         "react/wrap-multilines": 1
     }
 }

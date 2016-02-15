@@ -1,27 +1,19 @@
 "use strict";
 
 module.exports = {
-    "ecmaFeatures": {
-        "arrowFunctions": true,
-        "blockBindings": true,
-        "classes": true,
-        "defaultParams": true,
-        "destructuring": true,
-        "forOf": true,
-        "generators": true,
-        "modules": true,
-        "objectLiteralComputedProperties": true,
-        "objectLiteralShorthandMethods": true,
-        "objectLiteralShorthandProperties": true,
-        "restParams": true,
-        "spread": true,
-        "superInFunctions": true,
-        "templateStrings": true
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "ecmaFeatures": {
+            "impliedStrict": false
+        },
+        "sourceType": "module"
     },
     "env": {
         "browser": true,
         "node": true,
-        "es6": true
+        "commonjs": true,
+        "es6": true,
+        "shared-node-browser": true
     },
     "rules": {
         /**
@@ -73,7 +65,6 @@ module.exports = {
         "no-case-declarations": 2,
         "no-div-regex": 0,
         "no-else-return": 2,
-        "no-empty-label": 2,
         "no-empty-pattern": 2,
         "no-eq-null": 2,
         "no-eval": 2,
@@ -85,7 +76,7 @@ module.exports = {
         "no-implied-eval": 2,
         "no-invalid-this": 2,
         "no-iterator": 2,
-        "no-labels": 2,
+        "no-labels": [2, {"allowLoop": true, "allowSwitch": false}],
         "no-lone-blocks": 2,
         "no-loop-func": 2,
         "no-magic-numbers": 0,
@@ -119,7 +110,7 @@ module.exports = {
         /**
          * Strict
          */
-        "strict": [2, "global"],
+        "strict": [2, "safe"],
         /**
          * Variables
          */
@@ -150,14 +141,14 @@ module.exports = {
          * Stylistic Issues
          */
         "array-bracket-spacing": [1, "never"],
-        "block-spacing": [2, "always"],
+        "block-spacing": [1, "always"],
         "brace-style": [1, "1tbs", { "allowSingleLine": true }],
         "camelcase": [1, {"properties": "never"}],
         "comma-spacing": [1, {"before": false, "after": true}],
         "comma-style": [1, "last"],
         "computed-property-spacing": [1, "never"],
         "consistent-this": [1, "that"],
-        "eol-last": 2,
+        "eol-last": 1,
         "func-names": 0,
         "func-style": 0,
         "id-length": 0,
@@ -165,6 +156,7 @@ module.exports = {
         "indent": [2, 4, {"SwitchCase": 1, "VariableDeclarator": {"var": 1, "let": 1, "const": 1}}],
         "jsx-quotes": 0,
         "key-spacing": [1, {"beforeColon": false, "afterColon": true}],
+        "keyword-spacing": [2, {"before": true, "after": true}],
         "linebreak-style": [2, "unix"],
         "lines-around-comment": 1,
         "max-depth": 1,
@@ -181,13 +173,13 @@ module.exports = {
         "no-inline-comments": 0,
         "no-lonely-if": 2,
         "no-mixed-spaces-and-tabs": 2,
-        "no-multiple-empty-lines": [2, {"max": 2}],
+        "no-multiple-empty-lines": [1, {"max": 2}],
         "no-negated-condition": 1,
         "no-nested-ternary": 0,
         "no-new-object": 2,
         "no-plusplus": 0,
         "no-restricted-syntax": 0,
-        "no-spaced-func": 2,
+        "no-spaced-func": 1,
         "no-ternary": 0,
         "no-trailing-spaces": 2,
         "no-underscore-dangle": 0,
@@ -196,20 +188,17 @@ module.exports = {
         "one-var": [1, "always"],
         "operator-assignment": [2, "always"],
         "operator-linebreak": [1, "before"],
-        "padded-blocks": [2, "never"],
+        "padded-blocks": [1, "never"],
         "quote-props": [2, "as-needed", { "keywords": true, "unnecessary": false }],
         "quotes": 0,
         "require-jsdoc": 0,
-        "semi-spacing": [2, {"before": false, "after": true}],
-        "semi": [2, "always"],
+        "semi-spacing": [1, {"before": false, "after": true}],
+        "semi": [1, "always"],
         "sort-vars": 0,
-        "space-after-keywords": [2, "always"],
         "space-before-blocks": 2,
         "space-before-function-paren": [1, {"anonymous": "never", "named": "never"}],
-        "space-before-keywords": [2, "always"],
         "space-in-parens": [2, "never"],
         "space-infix-ops": 2,
-        "space-return-throw-case": 2,
         "space-unary-ops": [2, {"words": true, "nonwords": false}],
         "spaced-comment":  [2, "always", { "block": { "exceptions": ["-"] } }],
         "wrap-regex": 2,
@@ -221,10 +210,10 @@ module.exports = {
          "arrow-spacing": [1, {"before": true, "after": true}],
          "constructor-super": 2,
          "generator-star-spacing": [2, {"before": false, "after": true}],
-         "no-arrow-condition": 1,
          "no-class-assign": 2,
+         "no-confusing-arrow": 0,
          "no-const-assign": 2,
-         // "no-dupe-class-memnbers": 2,
+         "no-dupe-class-members": 2,
          "no-this-before-super": 2,
          "no-var": 1,
          "object-shorthand": [1, "always"],
