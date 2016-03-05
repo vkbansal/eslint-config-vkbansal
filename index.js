@@ -2,9 +2,10 @@
 
 module.exports = {
     "parserOptions": {
-        "ecmaVersion": 6,
+        "ecmaVersion": 7,
         "ecmaFeatures": {
-            "impliedStrict": false
+            "impliedStrict": false,
+            "experimentalObjectRestSpread": true
         },
         "sourceType": "module"
     },
@@ -51,6 +52,7 @@ module.exports = {
          * Best Practices
          */
         "accesor-pairs": 0,
+        "array-callback-return": 2,
         "block-scoped-var": 2,
         "complexity": 0,
         "consistent-return": 0,
@@ -65,14 +67,17 @@ module.exports = {
         "no-case-declarations": 2,
         "no-div-regex": 0,
         "no-else-return": 2,
+        "no-empty-function": 2,
         "no-empty-pattern": 2,
         "no-eq-null": 2,
         "no-eval": 2,
         "no-extend-native": 2,
         "no-extra-bind": 2,
+        "no-extra-label": 2,
         "no-fallthrough": 2,
         "no-floating-decimal": 2,
         "no-implicit-coercion": 2,
+        "no-implicit-globals": 2,
         "no-implied-eval": 2,
         "no-invalid-this": 2,
         "no-iterator": 2,
@@ -83,21 +88,24 @@ module.exports = {
         "no-multi-spaces": 2,
         "no-multi-str": 2,
         "no-native-reassign": [2, {"exceptions": ["Map"]}],
+        "no-new": 2,
         "no-new-func": 2,
         "no-new-wrappers": 2,
-        "no-new": 2,
-        "no-octal-escape": 2,
         "no-octal": 2,
+        "no-octal-escape": 2,
         "no-param-reassign": [2, {"props": true}],
         "no-process-env": 0,
         "no-proto": 2,
         "no-redeclare": 2,
         "no-return-assign":2,
         "no-script-url": 2,
+        "no-self-assign": 2,
         "no-self-compare": 2,
         "no-sequences": 2,
         "no-throw-literal": 2,
+        "no-unmodified-loop-condition": 0,
         "no-unused-expressions": 2,
+        "no-unused-labels": 2,
         "no-useless-call": 2,
         "no-useless-concat": 2,
         "no-void": 2,
@@ -110,7 +118,7 @@ module.exports = {
         /**
          * Strict
          */
-        "strict": [2, "safe"],
+        "strict": [2, "global"],
         /**
          * Variables
          */
@@ -118,10 +126,11 @@ module.exports = {
         "no-catch-shadow": 0,
         "no-delete-var": 2,
         "no-label-var": 2,
-        // "no-shadow-resticted-names": 2,
-        // "no-shadow": [2, {"builtinGlobals": true, "hoist": "all"}],
-        "no-undef-init": 2,
+        "no-restricted-globals": 0,
+        "no-shadow-resticted-names": 0,
+        "no-shadow": [0, {"builtinGlobals": true, "hoist": "all"}],
         "no-undef": 2,
+        "no-undef-init": 2,
         "no-undefined": 2,
         "no-unused-vars": 2,
         "no-use-before-define": 2,
@@ -135,6 +144,7 @@ module.exports = {
         "no-new-require": 0,
         "no-path-concat": 2,
         "no-process-exit": 0,
+        "no-restricted-imports": 0,
         "no-restricted-modules": 0,
         "no-sync": 0,
         /**
@@ -158,7 +168,7 @@ module.exports = {
         "key-spacing": [1, {"beforeColon": false, "afterColon": true}],
         "keyword-spacing": [2, {"before": true, "after": true}],
         "linebreak-style": [2, "unix"],
-        "lines-around-comment": 1,
+        "lines-around-comment": 0,
         "max-depth": 1,
         "max-len": 0,
         "max-nested-callbacks": 0,
@@ -167,6 +177,7 @@ module.exports = {
         "new-cap": [2, {"newIsCap": true, "capIsNew": false}],
         "new-parens": 2,
         "newline-after-var": [1, "always"],
+        "newline-before-return": 0,
         "no-array-constructor": 2,
         "no-bitwise": 0,
         "no-continue": 0,
@@ -184,16 +195,19 @@ module.exports = {
         "no-trailing-spaces": 2,
         "no-underscore-dangle": 0,
         "no-unneeded-ternary": 2,
+        "no-whitespace-before-property": 2,
         "object-curly-spacing": 0,
         "one-var": [1, "always"],
+        "one-var-declaration-per-line": [1, "initializations"],
         "operator-assignment": [2, "always"],
         "operator-linebreak": [1, "before"],
         "padded-blocks": [1, "never"],
         "quote-props": [2, "as-needed", { "keywords": true, "unnecessary": false }],
-        "quotes": 0,
+        "quotes": [2, "double", "avoid-escape"],
         "require-jsdoc": 0,
-        "semi-spacing": [1, {"before": false, "after": true}],
         "semi": [1, "always"],
+        "semi-spacing": [1, {"before": false, "after": true}],
+        "sort-imports": 0,
         "sort-vars": 0,
         "space-before-blocks": 2,
         "space-before-function-paren": [1, {"anonymous": "never", "named": "never"}],
@@ -214,14 +228,19 @@ module.exports = {
          "no-confusing-arrow": 0,
          "no-const-assign": 2,
          "no-dupe-class-members": 2,
+         "no-new-symbol": 2,
          "no-this-before-super": 2,
+         "no-useless-constructor": 1,
          "no-var": 1,
          "object-shorthand": [1, "always"],
          "prefer-arrow-callback": 1,
          "prefer-const": 0,
          "prefer-reflect": 0,
+         "prefer-rest-params": 1,
          "prefer-spread": 1,
          "prefer-template": 1,
-         "require-yield": 2
+         "require-yield": 2,
+         "template-curly-spacing": [2, "never"],
+         "yield-star-spacing": [2, "after"]
     }
 }
