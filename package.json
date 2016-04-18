@@ -20,10 +20,17 @@
   },
   "homepage": "https://github.com/vkbansal/eslint-config-vkbansal#readme",
   "peerDependencies": {
-    "eslint": "^2.3.0"
+    "eslint": "^2.7.0"
   },
   "optionalDependencies": {
-    "eslint-plugin-react": "^4.1.0",
-    "eslint-plugin-jsx-control-statements": "^1.1.0"
+    "eslint-plugin-react": "^5.0.0",
+    "eslint-plugin-jsx-control-statements": "^2.1.0"
+  },
+  "devDependencies": {
+    "axios": "^0.9.1",
+    "cheerio": "^0.20.0"
+  },
+  "dependencies": {
+    "object-assign": "^4.0.1"
   }
 }
