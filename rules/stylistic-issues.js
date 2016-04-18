@@ -24,10 +24,12 @@ module.exports = {
     "max-nested-callbacks": "off",
     "max-params": ["warn", 4],
     "max-statements": "warn",
+    "max-statements-per-line": ["warn", { "max": 1 }]
     "new-cap": ["error", {"newIsCap": true, "capIsNew": false}],
     "new-parens": "error",
     "newline-after-var": ["warn", "always"],
-    "newline-before-return": "off",
+    "newline-before-return": "warn",
+    "newline-per-chained-call": ["warn", {"ignoreChainWithDepth": 3}]
     "no-array-constructor": "error",
     "no-bitwise": "off",
     "no-continue": "off",
