@@ -22,6 +22,7 @@ module.exports = {
     "prefer-spread": "warn",
     "prefer-template": "warn",
     "require-yield": "error",
+    "sort-imports": "off",
     "template-curly-spacing": ["error", "never"],
     "yield-star-spacing": ["error", "after"]
 };
