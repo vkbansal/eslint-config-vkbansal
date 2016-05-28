@@ -1,16 +1,7 @@
 "use strict";
 
 let axios = require("axios"),
-    cheerio = require("cheerio"),
-    p = require("./package.json");
-
-
-// axios
-//     .get("https://api.github.com/repos/eslint/eslint/releases/latest")
-//     .then((res) => {
-//         console.log(`Current version is v${p.peerDependencies.eslint.substr(1)}`);
-//         console.log(`Latest version is ${res.data.tag_name}`);
-//     });
+    cheerio = require("cheerio");
 
 
 axios.get("http://eslint.org/docs/rules/")
@@ -40,4 +31,4 @@ axios.get("http://eslint.org/docs/rules/")
             }
 
         });
-    })
+    }).catch((err) => console.log(err));
