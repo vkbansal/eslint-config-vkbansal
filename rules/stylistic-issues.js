@@ -49,6 +49,7 @@ module.exports = {
     "no-unneeded-ternary": "error",
     "no-whitespace-before-property": "error",
     "object-curly-spacing": "off",
+    "object-property-newline": "error",
     "one-var": ["warn", "always"],
     "one-var-declaration-per-line": ["warn", "initializations"],
     "operator-assignment": ["error", "always"],
@@ -66,5 +67,6 @@ module.exports = {
     "space-infix-ops": "error",
     "space-unary-ops": ["error", {"words": true, "nonwords": false}],
     "spaced-comment":  ["error", "always", { "block": { "exceptions": ["-"] } }],
+    "unicode-bom": ["error", "never"],
     "wrap-regex": "error"
 };
