@@ -1,36 +1,35 @@
-let rules = {
-	// Static analysis:
-	"import/no-unresolved": ["error", { commonjs: true }],
-	"import/named": "error",
-	"import/default": "error",
-	"import/namespace": "error",
-	"import/no-restricted-paths": "off",
+module.exports = {
+	settings: {
+		'import/resolver': 'webpack'
+	},
+	rules: {
+		// Static analysis:
+		'import/no-unresolved': [2, { commonjs: true }],
+		'import/named': 2,
+		'import/default': 2,
+		'import/namespace': 2,
+		'import/no-restricted-paths': 0,
 
-	// Helpful warnings:
-	"import/export": "error",
-	"import/no-named-as-default": "error",
-	"import/no-named-as-default-member": "error",
-	"import/no-deprecated": "off",
-	"import/no-extraneous-dependencies": "error",
-	"import/no-mutable-exports": "error",
+		// Helpful warnings:
+		'import/export': 2,
+		'import/no-named-as-default': 2,
+		'import/no-named-as-default-member': 2,
+		'import/no-deprecated': 0,
+		'import/no-extraneous-dependencies': 2,
+		'import/no-mutable-exports': 2,
 
-	// Module systems:
-	"import/no-commonjs": "error",
-	"import/no-amd": "error",
-	"import/no-nodejs-modules": "error",
+		// Module systems:
+		'import/no-commonjs': 2,
+		'import/no-amd': 2,
+		'import/no-nodejs-modules': 2,
 
-	// Style guide:
-	"import/imports-first": "error",
-	"import/no-duplicates": "error",
-	"import/no-namespace": "off",
-	"import/extensions": ["error", {"js": "never"}],
-	"import/order": "error",
-	"import/newline-after-import": "error",
-	"import/prefer-default-export": "error"
+		// Style guide:
+		'import/imports-first': 2,
+		'import/no-duplicates': 2,
+		'import/no-namespace': 0,
+		'import/extensions': [2, {'js': 'never'}],
+		'import/order': 2,
+		'import/newline-after-import': 2,
+		'import/prefer-default-export': 2
+	}
 };
-
-let settings = {
-	"import/resolver": "webpack"
-};
-
-module.exports = { rules, settings };

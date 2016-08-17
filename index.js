@@ -1,34 +1,28 @@
-let importPlugin = require("./import");
-
-let eslintConfig = {
-    "parserOptions": {
-        "ecmaVersion": 7,
-        "ecmaFeatures": {
-            "impliedStrict": false,
-            "experimentalObjectRestSpread": true
+module.exports = {
+    extends: [
+        './rules/possible-errors',
+        './rules/best-practices',
+        './rules/strict-mode',
+        './rules/variables',
+        './rules/nodejs-and-commonjs',
+        './rules/stylistic-issues',
+        './rules/ecmascript-6',
+        './import'
+    ].map(require.resolve),
+    parserOptions: {
+        ecmaVersion: 7,
+        ecmaFeatures: {
+            'impliedStrict': false,
+            'experimentalObjectRestSpread': true
         },
-        "sourceType": "module"
+        sourceType: 'module'
     },
-    "env": {
-        "browser": true,
-        "node": true,
-        "commonjs": true,
-        "es6": true,
-        "shared-node-browser": true
+    env: {
+        'browser': true,
+        'node': true,
+        'commonjs': true,
+        'es6': true,
+        'shared-node-browser': true
     },
-    "plugins": ["import"],
-    settings: Object.assign({}, importPlugin.settings),
-    "rules": Object.assign(
-        {},
-        require("./rules/possible-errors"),
-        require("./rules/best-practices"),
-        require("./rules/strict-mode"),
-        require("./rules/variables"),
-        require("./rules/nodejs-and-commonjs"),
-        require("./rules/stylistic-issues"),
-        require("./rules/ecmascript-6"),
-        importPlugin.rules
-    )
+    plugins: ['import']
 };
-
-module.exports = eslintConfig;

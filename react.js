@@ -1,21 +1,17 @@
-let reactConfig = {
-    "plugins": [
-        "react"
+module.exports = {
+    extends: [
+        './react/core',
+        './react/jsx'
+    ].map(require.resolve),
+    'plugins': [
+        'react'
     ],
-    "parserOptions" : {
-        "ecmaFeatures": {
-            "jsx": true
+    'parserOptions' : {
+        'ecmaFeatures': {
+            'jsx': true
         }
     },
-    "rules": {
-        "jsx-quotes": ["error", "prefer-single"]
+    'rules': {
+        'jsx-quotes': ['error', 'prefer-single']
     }
-}
-
-Object.assign(
-    reactConfig.rules,
-    require("./react/core"),
-    require("./react/jsx")
-);
-
-module.exports = reactConfig;
+};

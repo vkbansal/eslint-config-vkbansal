@@ -6,12 +6,12 @@ axios.get("http://eslint.org/docs/rules/")
     .then((res) => {
         var $ = cheerio.load(res.data);
 
-        $("h2 + p + ul").each(function () {
+        $("table.rule-list").each(function () {
             let e = $(this),
                 category = e.prev().prev().attr("id"),
                 rulesFile = require(`./rules/${category}.js`),
-                oldRules = new Set(Object.keys(rulesFile)),
-                newRules = new Set(e.find("li > a").map(function() { return $(this).text();}).get());
+                oldRules = new Set(Object.keys(rulesFile.rules)),
+                newRules = new Set(e.find("tbody > tr > td > p > a").map(function() { return $(this).text();}).get());
 
             console.log(`\n${category}`);
 
