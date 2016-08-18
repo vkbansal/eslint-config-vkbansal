@@ -7,7 +7,8 @@ module.exports = {
         './rules/nodejs-and-commonjs',
         './rules/stylistic-issues',
         './rules/ecmascript-6',
-        './import'
+        './import',
+        './standard'
     ].map(require.resolve),
     parserOptions: {
         ecmaVersion: 7,
