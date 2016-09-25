@@ -11,9 +11,9 @@ module.exports = {
         './standard'
     ].map(require.resolve),
     parserOptions: {
-        ecmaVersion: 7,
+        ecmaVersion: 2017,
         ecmaFeatures: {
-            'impliedStrict': false,
+            'impliedStrict': true,
             'experimentalObjectRestSpread': true
         },
         sourceType: 'module'
@@ -22,7 +22,6 @@ module.exports = {
         'browser': true,
         'node': true,
         'commonjs': true,
-        'es6': true,
         'shared-node-browser': true
     },
     plugins: ['import']
