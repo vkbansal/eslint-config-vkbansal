@@ -14,11 +14,6 @@ module.exports = {
 		'react/no-is-mounted': 2,
 		'react/no-multi-comp': [2, {'ignoreStateless': true}],
 		'react/no-render-return-value': 2,
-		'react/jsx-tag-spacing': [2, {
-			'closingSlash': 'always',
-			'beforeSelfClosing': 'always',
-			'afterOpening': 'never'
-		}],
 		'react/no-set-state': 0,
 		'react/no-string-refs': 2,
 		'react/no-unescaped-entities': 2,
