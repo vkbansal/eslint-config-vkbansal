@@ -13,7 +13,7 @@ module.exports = {
 		'react/jsx-indent': 1,
 		'react/jsx-indent-props': [1, 4],
 		'react/jsx-key': 2,
-		'react/jsx-max-props-per-line': [1, {'maximum': 3}],
+		'react/jsx-max-props-per-line': 0,
 		'react/jsx-no-bind': 2,
 		'react/jsx-no-comment-textnodes': 2,
 		'react/jsx-no-duplicate-props': [2, {
