@@ -4,7 +4,7 @@ module.exports = {
         './import/module-systems',
 		'./import/static-analysis',
 		'./import/style-guide'
-    ].map(require.resolve)
+    ].map(require.resolve),
 	settings: {
 		'import/resolver': 'webpack'
 	}
