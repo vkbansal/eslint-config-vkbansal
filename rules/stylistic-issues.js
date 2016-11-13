@@ -11,6 +11,7 @@ module.exports = {
         'consistent-this': [1, 'that'],
         'eol-last': 1,
         'func-call-spacing': [2, 'never'],
+        'func-name-matching': 0,
         'func-names': 0,
         'func-style': [2, 'declaration', { 'allowArrowFunctions': true }],
         'id-blacklist': 0,

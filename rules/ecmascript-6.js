@@ -21,7 +21,6 @@ module.exports = {
         'prefer-arrow-callback': 1,
         'prefer-const': 1, // TODO: bump to error
         'prefer-numeric-literals' : 0,
-        'prefer-reflect': 0,
         'prefer-rest-params': 2,
         'prefer-spread': 2,
         'prefer-template': 2,
