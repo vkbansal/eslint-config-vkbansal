@@ -18,7 +18,7 @@ module.exports = {
 			'closingSlash': 'always',
 			'beforeSelfClosing': 'always',
 			'afterOpening': 'never'
-		}]
+		}],
 		'react/no-set-state': 0,
 		'react/no-string-refs': 2,
 		'react/no-unescaped-entities': 2,
