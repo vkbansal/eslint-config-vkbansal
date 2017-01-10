@@ -3,7 +3,7 @@ module.exports = {
         'accessor-pairs': 0,
         'array-callback-return': 2,
         'block-scoped-var': 2,
-        'class-methods-use-this': 1, // TODO: bump to error
+        'class-methods-use-this': 0,
         'complexity': 0,
         'consistent-return': 0,
         'curly': [2, 'multi-line'],
@@ -65,6 +65,7 @@ module.exports = {
         'no-warning-comments': 1,
         'no-with': 2,
         'radix': 2,
+        'require-await': 2,
         'vars-on-top': 0,
         'wrap-iife': [2, 'inside'],
         'yoda': 0

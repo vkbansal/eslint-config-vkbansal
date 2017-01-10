@@ -4,6 +4,10 @@
   "description": "Shareable eslint config",
   "main": "index.js",
   "scripts": {
+    "check": "node check.js",
+    "check:react": "node check.js react",
+    "check:import": "node check.js import",
+    "check:all": "node check.js && node check.js react && node check.js import",
     "test": "node index.js && node react.js && node import.js && node standard.js && node jsx-control-statements"
   },
   "repository": {
@@ -23,17 +27,22 @@
     "node": ">=5.0.0"
   },
   "peerDependencies": {
-    "eslint": "^3.10.0",
+    "eslint": "^3.13.1",
+    "eslint-import-resolver-webpack": "^0.8.0",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-standard": "^2.0.1",
-    "eslint-import-resolver-webpack": "^0.7.0"
-  },
-  "optionalDependencies": {
-    "eslint-plugin-react": "^6.5.0",
-    "eslint-plugin-jsx-control-statements": "^2.1.1"
+    "eslint-plugin-jsx-control-statements": "^2.1.1",
+    "eslint-plugin-react": "^6.9.0",
+    "eslint-plugin-standard": "^2.0.1"
   },
   "devDependencies": {
-    "axios": "^0.14.0",
-    "cheerio": "^0.22.0"
+    "axios": "^0.15.3",
+    "chalk": "^1.1.3",
+    "cheerio": "^0.22.0",
+    "eslint": "^3.13.1",
+    "eslint-import-resolver-webpack": "^0.8.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-control-statements": "^2.1.1",
+    "eslint-plugin-react": "^6.9.0",
+    "eslint-plugin-standard": "^2.0.1"
   }
 }

@@ -24,7 +24,8 @@ module.exports = {
 		'react/jsx-no-undef': 2,
 		'react/jsx-pascal-case': 2,
 		'react/jsx-sort-props': 0,
-		'react/jsx-space-before-closing': [2, 'never'],
+		'react/jsx-space-before-closing': [2, 'always'],
+		'react/jsx-tag-spacing': 2,
 		'react/jsx-uses-react': 2,
 		'react/jsx-uses-vars': 1,
 		'react/jsx-wrap-multilines': 2

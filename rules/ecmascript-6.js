@@ -19,7 +19,13 @@ module.exports = {
         'no-var': 2,
         'object-shorthand': [1, 'always'],
         'prefer-arrow-callback': 1,
-        'prefer-const': 1, // TODO: bump to error
+        'prefer-const': 2,
+        "prefer-destructuring": [2, {
+            'array': false,
+            'object': true
+        }, {
+            'enforceForRenamedProperties': false
+        }],
         'prefer-numeric-literals' : 0,
         'prefer-rest-params': 2,
         'prefer-spread': 2,
