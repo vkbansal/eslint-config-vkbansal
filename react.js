@@ -1,8 +1,4 @@
 module.exports = {
-    extends: [
-        './react/core',
-        './react/jsx'
-    ].map(require.resolve),
     'plugins': [
         'react'
     ],
@@ -11,6 +7,10 @@ module.exports = {
             'jsx': true
         }
     },
+    extends: [
+        './react/core',
+        './react/jsx'
+    ].map(require.resolve),
     'rules': {
         'jsx-quotes': ['error', 'prefer-single']
     }

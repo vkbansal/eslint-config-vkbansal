@@ -1,15 +1,4 @@
 module.exports = {
-    extends: [
-        './rules/possible-errors',
-        './rules/best-practices',
-        './rules/strict-mode',
-        './rules/variables',
-        './rules/nodejs-and-commonjs',
-        './rules/stylistic-issues',
-        './rules/ecmascript-6',
-        './import',
-        './standard'
-    ].map(require.resolve),
     parserOptions: {
         ecmaVersion: 2017,
         ecmaFeatures: {
@@ -22,7 +11,18 @@ module.exports = {
         'browser': true,
         'node': true,
         'commonjs': true,
-        'shared-node-browser': true
+        'shared-node-browser': true,
+        'es6': true
     },
-    plugins: ['import']
+    extends: [
+        './rules/possible-errors',
+        './rules/best-practices',
+        './rules/strict-mode',
+        './rules/variables',
+        './rules/nodejs-and-commonjs',
+        './rules/stylistic-issues',
+        './rules/ecmascript-6',
+        './import',
+        './standard'
+    ].map(require.resolve)
 };
