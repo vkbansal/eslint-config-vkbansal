@@ -47,6 +47,7 @@ module.exports = {
         'no-mixed-operators': 2,
         'no-mixed-spaces-and-tabs': 2,
         'no-multiple-empty-lines': [1, {'max': 2}],
+        'no-multi-assign': 0,
         'no-negated-condition': 1,
         'no-nested-ternary': 0,
         'no-new-object': 2,
