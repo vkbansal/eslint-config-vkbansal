@@ -19,7 +19,7 @@ module.exports = {
         'no-var': 2,
         'object-shorthand': [1, 'always'],
         'prefer-arrow-callback': 1,
-        'prefer-const': 2,
+        'prefer-const': 0,
         "prefer-destructuring": [2, {
             'array': false,
             'object': true

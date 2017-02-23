@@ -12,6 +12,7 @@ module.exports = {
         'import/prefer-default-export': 2,
         'import/max-dependencies': 0,
         'import/no-unassigned-import': 2,
-        'import/no-named-default': 0
+        'import/no-named-default': 0,
+        'import/no-anonymous-default-export': 0
     }
 };

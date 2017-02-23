@@ -2,6 +2,8 @@ module.exports = {
     rules: {
         'react/display-name': 1,
         'react/forbid-component-props': 0,
+        'react/forbid-elements': 0,
+        'react/forbid-foreign-prop-types': 0,
         'react/forbid-prop-types': 0,
         'react/no-array-index-key': 1,
         'react/no-children-prop': 2,
@@ -30,6 +32,7 @@ module.exports = {
         'react/self-closing-comp': 2,
         'react/sort-comp': 2,
         'react/sort-prop-types': [2, { 'ignoreCase': true, 'callbacksLast': true, 'requiredFirst': true}],
-        'react/style-prop-object': 2
+        'react/style-prop-object': 2,
+        'react/void-dom-elements-no-children': 2
     }
 };

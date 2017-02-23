@@ -80,6 +80,7 @@ module.exports = {
         'space-infix-ops': 2,
         'space-unary-ops': [2, {'words': true, 'nonwords': false}],
         'spaced-comment':  [2, 'always', { 'block': { 'exceptions': ['-'] } }],
+        'template-tag-spacing': 2,
         'unicode-bom': [2, 'never'],
         'wrap-regex': 2
     }
