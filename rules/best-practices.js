@@ -6,7 +6,7 @@ module.exports = {
         'class-methods-use-this': 0,
         'complexity': 0,
         'consistent-return': 0,
-        'curly': [2, 'multi-line'],
+        'curly': [2, 'multi-or-nest', 'consistent'],
         'default-case': 0,
         'dot-location': 0,
         'dot-notation': [2, { 'allowKeywords': true, 'allowPattern': '^[a-z]+(_[a-z]+)+$'}],

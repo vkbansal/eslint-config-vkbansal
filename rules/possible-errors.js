@@ -1,6 +1,7 @@
 module.exports  = {
     rules: {
         'no-await-in-loop': 2,
+        'no-compare-neg-zero': 0,
         'no-cond-assign': [2, 'except-parens'],
         'no-console': 1,
         'no-constant-condition': 2,
