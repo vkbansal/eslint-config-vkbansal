@@ -12,6 +12,7 @@ module.exports = {
         './react/jsx'
     ].map(require.resolve),
     'rules': {
-        'jsx-quotes': ['error', 'prefer-single']
+        'jsx-quotes': ['error', 'prefer-single'],
+        'class-methods-use-this': ['error', { 'exceptMethods': ['render', 'getInitialState', 'getDefaultProps', 'getChildContext', 'componentWillMount', 'componentDidMount', 'componentWillReceiveProps', 'shouldComponentUpdate', 'componentWillUpdate', 'componentDidUpdate', 'componentWillUnmount'] }]
     }
 };

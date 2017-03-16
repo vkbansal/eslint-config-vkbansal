@@ -1,16 +1,24 @@
 module.exports = {
     rules: {
-        'init-declarations': 0,
-        'no-catch-shadow': 0,
-        'no-delete-var': 2,
-        'no-label-var': 2,
-        'no-restricted-globals': 0,
-        'no-shadow-restricted-names': 0,
-        'no-shadow': [0, {'builtinGlobals': true, 'hoist': 'all'}],
-        'no-undef': 2,
-        'no-undef-init': 2,
-        'no-undefined': 2,
-        'no-unused-vars': [2, {'ignoreRestSiblings': true}],
-        'no-use-before-define': 2
+        'init-declarations': 'off',
+        'no-catch-shadow': 'off',
+        'no-delete-var': 'error',
+        'no-label-var': 'error',
+        'no-restricted-globals': 'off',
+        'no-shadow-restricted-names': 'error',
+        'no-shadow': 'error',
+        'no-undef': 'error',
+        'no-undef-init': 'error',
+        'no-undefined': 'off',
+        'no-unused-vars': ['error', {
+            vars: 'local',
+            args: 'after-used',
+            ignoreRestSiblings: true
+        }],
+        'no-use-before-define': ['error', {
+            functions: true,
+            classes: true,
+            variables: true
+        }]
     }
 }
