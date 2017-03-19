@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-vkbansal",
-  "version": "4.5.1",
+  "version": "5.0.0",
   "description": "Shareable eslint config",
   "main": "index.js",
   "scripts": {
@@ -56,9 +56,9 @@
     "prettier": "^0.22.0"
   },
   "lint-staged": {
-      "*.js": [
-          "prettier --single-quote --tab-width 4 --print-width 120 --trailing-comma none --jsx-bracket-same-line --write",
-          "git add"
-      ]
+    "*.js": [
+      "prettier --single-quote --tab-width 4 --print-width 120 --trailing-comma none --jsx-bracket-same-line --write",
+      "git add"
+    ]
   }
 }
