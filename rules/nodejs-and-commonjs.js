@@ -1,5 +1,5 @@
 module.exports = {
-    rules : {
+    rules: {
         'callback-return': 'off',
         'global-require': 'error',
         'handle-callback-err': 'off',

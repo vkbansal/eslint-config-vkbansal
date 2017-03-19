@@ -1,4 +1,4 @@
-module.exports  = {
+module.exports = {
     rules: {
         'no-await-in-loop': 'error',
         'no-compare-neg-zero': 'off',
@@ -14,12 +14,16 @@ module.exports  = {
         'no-empty': 'error',
         'no-ex-assign': 'error',
         'no-extra-boolean-cast': 'error',
-        'no-extra-parens': ['error', 'all', {
-            'conditionalAssign': true,
-            'nestedBinaryExpressions': false,
-            'returnAssign': false,
-            'ignoreJSX': 'multi-line'
-        }],
+        'no-extra-parens': [
+            'error',
+            'all',
+            {
+                conditionalAssign: true,
+                nestedBinaryExpressions: false,
+                returnAssign: false,
+                ignoreJSX: 'multi-line'
+            }
+        ],
         'no-extra-semi': 'error',
         'no-func-assign': 'error',
         'no-inner-declarations': 'error',
@@ -36,6 +40,6 @@ module.exports  = {
         'no-unreachable': 'error',
         'use-isnan': 'error',
         'valid-jsdoc': 'off',
-        'valid-typeof': ['error', { 'requireStringLiterals': true }]
+        'valid-typeof': ['error', { requireStringLiterals: true }]
     }
 };
