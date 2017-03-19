@@ -1,38 +1,63 @@
 module.exports = {
     rules: {
-        'react/display-name': 1,
-        'react/forbid-component-props': 0,
-        'react/forbid-elements': 0,
-        'react/forbid-foreign-prop-types': 0,
-        'react/forbid-prop-types': 0,
-        'react/no-array-index-key': 1,
-        'react/no-children-prop': 2,
-        'react/no-danger': 2,
-        'react/no-danger-with-children': 2,
-        'react/no-deprecated': 1,
-        'react/no-did-mount-set-state': 2,
-        'react/no-did-update-set-state': 2,
-        'react/no-direct-mutation-state': 2,
-        'react/no-find-dom-node': 1,
-        'react/no-is-mounted': 2,
-        'react/no-multi-comp': [2, {'ignoreStateless': true}],
-        'react/no-render-return-value': 2,
-        'react/no-set-state': 0,
-        'react/no-string-refs': 2,
-        'react/no-unescaped-entities': 2,
-        'react/no-unknown-property': 2,
-        'react/no-unused-prop-types': 0,
-        'react/prefer-es6-class': 2,
-        'react/prefer-stateless-function': 1,
-        'react/prop-types': 0,
-        'react/react-in-jsx-scope': 2,
-        'react/require-default-props': 0,
-        'react/require-optimization': 0,
-        'react/require-render-return': 2,
-        'react/self-closing-comp': 2,
-        'react/sort-comp': 2,
-        'react/sort-prop-types': [2, { 'ignoreCase': true, 'callbacksLast': true, 'requiredFirst': true}],
-        'react/style-prop-object': 2,
-        'react/void-dom-elements-no-children': 2
+        'react/display-name': ['off', { ignoreTranspilerName: false }],
+        'react/forbid-component-props': ['off', { forbid: [] }],
+        'react/forbid-elements': 'off',
+        'react/forbid-foreign-prop-types': 'off',
+        'react/forbid-prop-types': ['error', { forbid: [] }],
+        'react/no-array-index-key': 'error',
+        'react/no-children-prop': 'error',
+        'react/no-danger': 'warn',
+        'react/no-danger-with-children': 'error',
+        'react/no-deprecated': ['error'],
+        'react/no-did-mount-set-state': ['error'],
+        'react/no-did-update-set-state': ['error'],
+        'react/no-direct-mutation-state': 'error',
+        'react/no-find-dom-node': 'error',
+        'react/no-is-mounted': 'error',
+        'react/no-multi-comp': ['error', { ignoreStateless: true }],
+        'react/no-render-return-value': 'error',
+        'react/no-set-state': 'off',
+        'react/no-string-refs': 'error',
+        'react/no-unescaped-entities': 'error',
+        'react/no-unknown-property': 'error',
+        'react/no-unused-prop-types': [
+            'error',
+            {
+                customValidators: [],
+                skipShapeProps: true
+            }
+        ],
+        'react/prefer-es6-class': ['error', 'always'],
+        'react/prefer-stateless-function': 'error',
+        'react/prop-types': [
+            'error',
+            {
+                ignore: [],
+                customValidators: []
+            }
+        ],
+        'react/react-in-jsx-scope': 'error',
+        'react/require-default-props': 'error',
+        'react/require-optimization': ['off', { allowDecorators: [] }],
+        'react/require-render-return': 'error',
+        'react/self-closing-comp': 'error',
+        'react/sort-comp': [
+            'error',
+            {
+                order: [
+                    'static-methods',
+                    'lifecycle',
+                    '/^(on|handle).+$',
+                    '/^(get|set)(?!InitialState$|DefaultProps$|ChildContext$).+$/',
+                    'everything-else',
+                    '/^render.+$/',
+                    'render'
+                ]
+            }
+        ],
+        'react/sort-prop-types': ['off', { ignoreCase: true, callbacksLast: false, requiredFirst: false }],
+        'react/style-prop-object': 'error',
+        'react/void-dom-elements-no-children': 'error'
     }
 };

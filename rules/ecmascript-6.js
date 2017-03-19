@@ -1,40 +1,88 @@
 module.exports = {
     rules: {
-        'arrow-body-style': [1, 'as-needed'],
-        'arrow-parens': [1, 'always'],
-        'arrow-spacing': [1, {'before': true, 'after': true}],
-        'constructor-super': 2,
-        'generator-star-spacing': [2, {'before': false, 'after': true}],
-        'no-class-assign': 2,
-        'no-confusing-arrow': 0,
-        'no-const-assign': 2,
-        'no-dupe-class-members': 2,
-        'no-duplicate-imports': [2, { includeExports: true }],
-        'no-new-symbol': 2,
-        'no-restricted-imports': 0,
-        'no-this-before-super': 2,
-        'no-useless-computed-key': 2,
-        'no-useless-constructor': 1,
-        'no-useless-rename': [2, {'ignoreDestructuring': false, 'ignoreImport': false, 'ignoreExport': true}],
-        'no-var': 2,
-        'object-shorthand': [1, 'always'],
-        'prefer-arrow-callback': 1,
-        'prefer-const': 0,
-        "prefer-destructuring": [2, {
-            'array': false,
-            'object': true
-        }, {
-            'enforceForRenamedProperties': false
-        }],
-        'prefer-numeric-literals' : 0,
-        'prefer-rest-params': 2,
-        'prefer-spread': 2,
-        'prefer-template': 2,
-        'require-yield': 2,
-        'rest-spread-spacing': [2, 'never'],
-        'sort-imports': 0,
-        'symbol-description': 0,
-        'template-curly-spacing': [2, 'never'],
-        'yield-star-spacing': [2, 'after']
+        'arrow-body-style': [
+            'error',
+            'as-needed',
+            {
+                requireReturnForObjectLiteral: false
+            }
+        ],
+        'arrow-parens': [
+            'error',
+            'as-needed',
+            {
+                requireForBlockBody: true
+            }
+        ],
+        'arrow-spacing': ['error', { before: true, after: true }],
+        'constructor-super': 'error',
+        'generator-star-spacing': ['error', { before: false, after: true }],
+        'no-class-assign': 'error',
+        'no-confusing-arrow': [
+            'error',
+            {
+                allowParens: true
+            }
+        ],
+        'no-const-assign': 'error',
+        'no-dupe-class-members': 'error',
+        'no-duplicate-imports': 'off', // handled by import plugin
+        'no-new-symbol': 'error',
+        'no-restricted-imports': 'off',
+        'no-this-before-super': 'error',
+        'no-useless-computed-key': 'error',
+        'no-useless-constructor': 'error',
+        'no-useless-rename': ['error', { ignoreDestructuring: false, ignoreImport: false, ignoreExport: false }],
+        'no-var': 'error',
+        'object-shorthand': [
+            'error',
+            'always',
+            {
+                ignoreConstructors: false,
+                avoidQuotes: true
+            }
+        ],
+        'prefer-arrow-callback': [
+            'error',
+            {
+                allowNamedFunctions: false,
+                allowUnboundThis: true
+            }
+        ],
+        'prefer-const': [
+            'off',
+            {
+                destructuring: 'any',
+                ignoreReadBeforeAssign: true
+            }
+        ],
+        'prefer-destructuring': [
+            'off',
+            {
+                array: true,
+                object: true
+            },
+            {
+                enforceForRenamedProperties: false
+            }
+        ],
+        'prefer-numeric-literals': 'error',
+        'prefer-rest-params': 'error',
+        'prefer-spread': 'error',
+        'prefer-template': 'error',
+        'require-yield': 'error',
+        'rest-spread-spacing': ['error', 'never'],
+        'sort-imports': [
+            'off',
+            {
+                // handled by import plugin
+                ignoreCase: false,
+                ignoreMemberSort: false,
+                memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single']
+            }
+        ],
+        'symbol-description': 'error',
+        'template-curly-spacing': 'error',
+        'yield-star-spacing': ['error', 'after']
     }
 };
