@@ -1,8 +1,8 @@
 module.exports = {
     rules: {
-        'import/no-commonjs': 2,
-        'import/no-amd': 2,
-        'import/no-nodejs-modules': 2,
-        'import/unambiguous': 2
+        'import/no-commonjs': 'error',
+        'import/no-amd': 'error',
+        'import/no-nodejs-modules': 'error',
+        'import/unambiguous': 'off'
     }
 };

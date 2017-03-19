@@ -1,18 +1,21 @@
 module.exports = {
     rules: {
-        'import/first': 2,
-        'import/no-duplicates': 2,
-        'import/no-namespace': 0,
-        'import/extensions': [2, {'js': 'never'}],
-        'import/order': [2, {
-            'newlines-between': 'always',
-            'groups': ['builtin', 'external', 'internal', 'parent', 'sibling', 'index']
-        }],
-        'import/newline-after-import': 2,
-        'import/prefer-default-export': 2,
-        'import/max-dependencies': 0,
-        'import/no-unassigned-import': 2,
-        'import/no-named-default': 0,
-        'import/no-anonymous-default-export': 0
+        'import/first': ['error', 'absolute-first'],
+        'import/no-duplicates': 'error',
+        'import/no-namespace': 'off',
+        'import/extensions': ['error', 'always', { js: 'never', jsx: 'never' }],
+        'import/order': [
+            'error',
+            {
+                'newlines-between': 'always',
+                groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index']
+            }
+        ],
+        'import/newline-after-import': 'error',
+        'import/prefer-default-export': 'error',
+        'import/max-dependencies': ['off', { max: 10 }],
+        'import/no-unassigned-import': 'off',
+        'import/no-named-default': 'error',
+        'import/no-anonymous-default-export': 'off'
     }
 };
