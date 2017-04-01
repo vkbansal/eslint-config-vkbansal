@@ -57,7 +57,24 @@ module.exports = {
         ],
         'jsx-quotes': ['off', 'prefer-double'],
         'key-spacing': ['error', { beforeColon: false, afterColon: true }],
-        'keyword-spacing': ['error', { before: true, after: true }],
+        'keyword-spacing': [
+            'error',
+            {
+                before: true,
+                after: true,
+                overrides: {
+                    return: {
+                        after: true
+                    },
+                    throw: {
+                        after: true
+                    },
+                    case: {
+                        after: true
+                    }
+                }
+            }
+        ],
         'line-comment-position': [
             'off',
             {

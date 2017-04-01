@@ -50,7 +50,7 @@ This package also includes a shareable config to be used with `React` or `JSX`. 
 | [no-implicit-coercion](http://eslint.org/docs/rules/no-implicit-coercion)   | off                  | error            |
 | [no-warning-comments](http://eslint.org/docs/rules/no-warning-comments)     | off                  | warn             |
 | [require-await](http://eslint.org/docs/rules/require-await)                 | off                  | error            |
-| [wrap-iife](http://eslint.org/docs/rules/wrap-iife)                         | outside              | inside           |
+| [wrap-iife](http://eslint.org/docs/rules/wrap-iife)                         | outside, functionPrototypeMethods: false | inside, functionPrototypeMethods: false |
 | [yoda](http://eslint.org/docs/rules/yoda)                                   | off                  | error            |
 | [comma-dangle](http://eslint.org/docs/rules/comma-dangle)                   | always-multiline     | never            |
 | [no-constant-condition](http://eslint.org/docs/rules/no-constant-condition) | warn                 | error            |
@@ -61,8 +61,10 @@ This package also includes a shareable config to be used with `React` or `JSX`. 
 | [no-nested-ternary](http://eslint.org/docs/rules/no-nested-ternary)         | error                | off              |
 | [no-plusplus](http://eslint.org/docs/rules/no-plusplus)                     | error                | off              |
 | [no-restricted-syntax](http://eslint.org/docs/rules/no-restricted-syntax)   | `ForInStatement`, `ForOfStatement`, `LabeledStatement`, `WithStatement` | `LabeledStatement`, `WithStatement` |
-| [template-tag-spacing](http://eslint.org/docs/rules/template-tag-spacing)   | off                  | error            |
-| [wrap-regex](http://eslint.org/docs/rules/template-tag-spacing)             | off                  | error            |
+| [nonblock-statement-body-position](http://eslint.org/docs/rules/nonblock-statement-body-position)  | off | error      |
+| [template-tag-spacing](http://eslint.org/docs/rules/template-tag-spacing)          | off           | error            |
+| [wrap-regex](http://eslint.org/docs/rules/template-tag-spacing)                    | off           | error            |
+| [prefer-const](http://eslint.org/docs/rules/prefer-const)                          | error         | off              |
 | [no-native-reassign](http://eslint.org/docs/rules/no-native-reassign) (deprecated) | off           | N/A              |
 | [no-negated-in-lhs](http://eslint.org/docs/rules/no-negated-in-lhs) (deprecated)   | off           | N/A              |
 | [no-spaced-func](http://eslint.org/docs/rules/no-spaced-func) (deprecated)         | error         | N/A              |

@@ -43,7 +43,13 @@ module.exports = {
         'no-new-wrappers': 'error',
         'no-octal': 'error',
         'no-octal-escape': 'error',
-        'no-param-reassign': ['error', { props: true }],
+        'no-param-reassign': [
+            'error',
+            {
+                props: true,
+                ignorePropertyModificationsFor: ['acc', 'e', 'ctx', 'req', 'request', 'res', 'response', '$scope']
+            }
+        ],
         'no-proto': 'error',
         'no-redeclare': 'error',
         'no-restricted-properties': [
@@ -75,7 +81,10 @@ module.exports = {
         'no-sequences': 'error',
         'no-throw-literal': 'error',
         'no-unmodified-loop-condition': 'off',
-        'no-unused-expressions': ['error', { allowShortCircuit: false, allowTernary: false }],
+        'no-unused-expressions': [
+            'error',
+            { allowShortCircuit: false, allowTernary: false, allowTaggedTemplates: false }
+        ],
         'no-unused-labels': 'error',
         'no-useless-call': 'off',
         'no-useless-concat': 'error',
