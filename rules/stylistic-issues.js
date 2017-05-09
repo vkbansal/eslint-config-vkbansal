@@ -25,7 +25,16 @@ module.exports = {
                 }
             }
         ],
-        'comma-dangle': ['error', 'never'],
+        'comma-dangle': [
+            'error',
+            {
+                arrays: 'never',
+                objects: 'never',
+                imports: 'never',
+                exports: 'never',
+                functions: 'never'
+            }
+        ],
         'comma-spacing': ['error', { before: false, after: true }],
         'comma-style': ['error', 'last'],
         'computed-property-spacing': ['error', 'never'],
@@ -167,7 +176,17 @@ module.exports = {
         'no-nested-ternary': 'off',
         'no-new-object': 'error',
         'no-plusplus': 'off',
-        'no-restricted-syntax': ['error', 'LabeledStatement', 'WithStatement'],
+        'no-restricted-syntax': [
+            'error',
+            {
+                selector: 'LabeledStatement',
+                message: 'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.'
+            },
+            {
+                selector: 'WithStatement',
+                message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.'
+            }
+        ],
         'no-tabs': 'error',
         'no-ternary': 'off',
         'no-trailing-spaces': 'error',

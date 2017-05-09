@@ -45,7 +45,12 @@ module.exports = {
         ],
         'react/jsx-no-literals': 'off',
         'react/jsx-no-target-blank': 'error',
-        'react/jsx-no-undef': 'error',
+        'react/jsx-no-undef': [
+            'error',
+            {
+                allowGlobals: true
+            }
+        ],
         'react/jsx-pascal-case': [
             'error',
             {
@@ -62,7 +67,6 @@ module.exports = {
                 shorthandLast: false
             }
         ],
-        'react/jsx-space-before-closing': ['error', 'always'],
         'react/jsx-tag-spacing': [
             'error',
             {

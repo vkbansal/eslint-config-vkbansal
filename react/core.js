@@ -4,7 +4,7 @@ module.exports = {
         'react/forbid-component-props': ['off', { forbid: [] }],
         'react/forbid-elements': 'off',
         'react/forbid-foreign-prop-types': 'off',
-        'react/forbid-prop-types': ['error', { forbid: [] }],
+        'react/forbid-prop-types': ['error', { forbid: ['any'] }],
         'react/no-array-index-key': 'error',
         'react/no-children-prop': 'error',
         'react/no-danger': 'warn',
@@ -28,6 +28,7 @@ module.exports = {
                 skipShapeProps: true
             }
         ],
+        'react/no-will-update-set-state': 'error',
         'react/prefer-es6-class': ['error', 'always'],
         'react/prefer-stateless-function': 'error',
         'react/prop-types': [

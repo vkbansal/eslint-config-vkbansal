@@ -45,7 +45,6 @@ This package also includes a shareable config to be used with `React` or `JSX`. 
 | --------------------------------------------------------------------------- | -------------------- | ---------------- |
 | [indent](http://eslint.org/docs/rules/indent)                               | 2 spaces             | 4 spaces         |
 | [eqeqeq](http://eslint.org/docs/rules/eqeqeq)                               | ignore for null      | always           |
-| [no-empty-function](http://eslint.org/docs/rules/no-empty-function)         | allow `arrowFunctions`, `functions` and `methods` | allow only `arrowFunctions`|
 | [no-eq-null](http://eslint.org/docs/rules/no-eq-null)                       | off                  | error            |
 | [no-implicit-coercion](http://eslint.org/docs/rules/no-implicit-coercion)   | off                  | error            |
 | [no-warning-comments](http://eslint.org/docs/rules/no-warning-comments)     | off                  | warn             |
