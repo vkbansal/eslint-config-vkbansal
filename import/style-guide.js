@@ -1,7 +1,7 @@
 module.exports = {
     rules: {
         'import/dynamic-import-chunkname': 0,
-        'import/exports-last': 2,
+        'import/exports-last': 0,
         'import/extensions': [
             2,
             'always',

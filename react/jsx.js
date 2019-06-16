@@ -11,7 +11,7 @@ module.exports = {
         'react/jsx-filename-extension': [
             2,
             {
-                extensions: ['.js']
+                extensions: ['.js', '.tsx']
             }
         ],
         'react/jsx-first-prop-new-line': 0, // handled by prettier

@@ -11,8 +11,8 @@ module.exports = {
         '@typescript-eslint/ban-types': 0,
         '@typescript-eslint/camelcase': [2, { properties: 'always', ignoreDestructuring: false }],
         '@typescript-eslint/class-name-casing': 2,
-        '@typescript-eslint/explicit-function-return-type': 1,
-        '@typescript-eslint/explicit-member-accessibility': 2,
+        '@typescript-eslint/explicit-function-return-type': 0,
+        '@typescript-eslint/explicit-member-accessibility': [2, 'no-public'],
         '@typescript-eslint/func-call-spacing': 0, // handled by prettier
         '@typescript-eslint/generic-type-naming': 0,
         '@typescript-eslint/indent': 0, // handled by prettier
