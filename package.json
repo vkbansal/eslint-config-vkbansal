@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-vkbansal",
-    "version": "6.0.0-alpha.3",
+    "version": "6.0.0-alpha.4",
     "description": "Shareable eslint config",
     "main": "index.js",
     "files": [
