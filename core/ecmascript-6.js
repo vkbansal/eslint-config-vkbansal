@@ -15,7 +15,10 @@ module.exports = {
         'no-this-before-super': 2,
         'no-useless-computed-key': 2,
         'no-useless-constructor': 2,
-        'no-useless-rename': [2, { ignoreDestructuring: false, ignoreImport: false, ignoreExport: false }],
+        'no-useless-rename': [
+            2,
+            { ignoreDestructuring: false, ignoreImport: false, ignoreExport: false }
+        ],
         'no-var': 2,
         'object-shorthand': [
             2,

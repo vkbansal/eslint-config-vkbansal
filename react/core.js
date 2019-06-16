@@ -69,7 +69,10 @@ module.exports = {
                 ]
             }
         ],
-        'react/sort-prop-types': [0, { ignoreCase: true, callbacksLast: false, requiredFirst: false }],
+        'react/sort-prop-types': [
+            0,
+            { ignoreCase: true, callbacksLast: false, requiredFirst: false }
+        ],
         'react/state-in-constructor': 0,
         'react/static-property-placement': 0,
         'react/style-prop-object': 2,

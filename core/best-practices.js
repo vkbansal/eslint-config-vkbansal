@@ -36,7 +36,10 @@ module.exports = {
         'no-labels': [2, { allowLoop: false, allowSwitch: false }],
         'no-lone-blocks': 2,
         'no-loop-func': 2,
-        'no-magic-numbers': [2, { ignore: [], ignoreArrayIndexes: true, enforceConst: true, detectObjects: false }],
+        'no-magic-numbers': [
+            2,
+            { ignore: [], ignoreArrayIndexes: true, enforceConst: true, detectObjects: false }
+        ],
         'no-multi-spaces': 0, // handled by prettier
         'no-multi-str': 2,
         'no-new': 2,
@@ -48,7 +51,16 @@ module.exports = {
             2,
             {
                 props: true,
-                ignorePropertyModificationsFor: ['acc', 'e', 'ctx', 'req', 'request', 'res', 'response', '$scope']
+                ignorePropertyModificationsFor: [
+                    'acc',
+                    'e',
+                    'ctx',
+                    'req',
+                    'request',
+                    'res',
+                    'response',
+                    '$scope'
+                ]
             }
         ],
         'no-proto': 2,
@@ -82,7 +94,10 @@ module.exports = {
         'no-sequences': 2,
         'no-throw-literal': 2,
         'no-unmodified-loop-condition': 0,
-        'no-unused-expressions': [2, { allowShortCircuit: false, allowTernary: false, allowTaggedTemplates: false }],
+        'no-unused-expressions': [
+            2,
+            { allowShortCircuit: false, allowTernary: false, allowTaggedTemplates: false }
+        ],
         'no-unused-labels': 2,
         'no-useless-call': 0,
         'no-useless-catch': 2,

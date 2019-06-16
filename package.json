@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-vkbansal",
-    "version": "5.2.1",
+    "version": "6.0.0-alpha.1",
     "description": "Shareable eslint config",
     "main": "index.js",
     "files": [
@@ -13,13 +13,14 @@
         "import"
     ],
     "scripts": {
-        "compare": "node scripts/check.js",
-        "compare:react": "node scripts/check.js react",
-        "compare:import": "node scripts/check.js import",
-        "compare:all": "yarn compare && yarn compare:react && yarn compare:import",
+        "compare": "node scripts/compare.js",
+        "compare:react": "node scripts/compare.js react",
+        "compare:import": "node scripts/compare.js import",
+        "compare:ts": "node scripts/compare.js ts",
+        "compare:all": "yarn compare && yarn compare:react && yarn compare:import && yarn compare:ts",
         "fmt:check": "prettier --check index.js import.js react.js typescript.js core/*.js react/*.js import/*.js",
         "fmt": "prettier --write index.js import.js react.js typescript.js core/*.js react/*.js import/*.js",
-        "test": "yarn fmt:check node index.js && node react.js && node import.js",
+        "test": "yarn fmt:check && node index.js && node react/index.js && node import/index.js && node typescript/index.js",
         "precommit": "lint-staged",
         "prepublishOnly": "yarn test"
     },
@@ -40,18 +41,18 @@
         "node": ">=8.9.0"
     },
     "peerDependencies": {
-        "eslint": "^5.16.0",
-        "eslint-plugin-import": "^2.17.3",
+        "@typescript-eslint/eslint-plugin": "^1.10.2",
         "@typescript-eslint/parser": "^1.10.2",
-        "@typescript-eslint/eslint-plugin": "^1.10.2"
+        "eslint": "^5.16.0",
+        "eslint-plugin-import": "^2.17.3"
     },
     "optionalDependencies": {
         "eslint-plugin-react": "^7.13.0",
         "eslint-plugin-react-hooks": "^1.6.0"
     },
     "devDependencies": {
-        "@typescript-eslint/parser": "^1.10.2",
         "@typescript-eslint/eslint-plugin": "^1.10.2",
+        "@typescript-eslint/parser": "^1.10.2",
         "axios": "^0.19.0",
         "chalk": "^2.4.2",
         "cheerio": "^1.0.0-rc.3",
@@ -69,11 +70,5 @@
         "json-diff": "^0.5.4",
         "lint-staged": "^8.2.1",
         "prettier": "^1.18.2"
-    },
-    "lint-staged": {
-        "*.js": [
-            "prettier --single-quote --tab-width 4 --print-width 120 --trailing-comma none --jsx-bracket-same-line --write",
-            "git add"
-        ]
     }
 }

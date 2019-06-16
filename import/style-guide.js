@@ -2,7 +2,11 @@ module.exports = {
     rules: {
         'import/dynamic-import-chunkname': 0,
         'import/exports-last': 2,
-        'import/extensions': [2, 'always', { js: 'never', jsx: 'never', ts: 'never', tsx: 'never' }],
+        'import/extensions': [
+            2,
+            'always',
+            { js: 'never', jsx: 'never', ts: 'never', tsx: 'never' }
+        ],
         'import/first': [2, 'absolute-first'],
         'import/group-exports': 0,
         'import/max-dependencies': [0, { max: 10 }],
