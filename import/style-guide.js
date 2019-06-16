@@ -1,21 +1,26 @@
 module.exports = {
     rules: {
-        'import/first': ['error', 'absolute-first'],
-        'import/no-duplicates': 'error',
-        'import/no-namespace': 'off',
-        'import/extensions': ['error', 'always', { js: 'never', jsx: 'never' }],
+        'import/dynamic-import-chunkname': 0,
+        'import/exports-last': 2,
+        'import/extensions': [2, 'always', { js: 'never', jsx: 'never', ts: 'never', tsx: 'never' }],
+        'import/first': [2, 'absolute-first'],
+        'import/group-exports': 0,
+        'import/max-dependencies': [0, { max: 10 }],
+        'import/newline-after-import': 2,
+        'import/no-anonymous-default-export': 2,
+        'import/no-default-export': 0,
+        'import/no-duplicates': 2,
+        'import/no-named-default': 2,
+        'import/no-named-export': 0,
+        'import/no-namespace': 0,
+        'import/no-unassigned-import': 0,
         'import/order': [
-            'error',
+            2,
             {
                 'newlines-between': 'always',
                 groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index']
             }
         ],
-        'import/newline-after-import': 'error',
-        'import/prefer-default-export': 'error',
-        'import/max-dependencies': ['off', { max: 10 }],
-        'import/no-unassigned-import': 'off',
-        'import/no-named-default': 'error',
-        'import/no-anonymous-default-export': 'off'
+        'import/prefer-default-export': 1
     }
 };

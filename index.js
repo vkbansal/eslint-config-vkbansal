@@ -1,26 +1,30 @@
 module.exports = {
+    parser: '@typescript-eslint/parser',
     extends: [
-        './rules/best-practices',
-        './rules/possible-errors',
-        './rules/nodejs-and-commonjs',
-        './rules/stylistic-issues',
-        './rules/variables',
-        './rules/ecmascript-6',
-        './import',
+        './core/best-practices',
+        './core/possible-errors',
+        './core/nodejs-and-commonjs',
+        './core/stylistic-issues',
+        './core/variables',
+        './core/ecmascript-6',
+        './import/helpful-warnings',
+        './import/module-systems',
+        './import/static-analysis',
+        './import/style-guide'
     ].map(require.resolve),
-        parserOptions: {
-        ecmaVersion: 2017,
+    parserOptions: {
+        ecmaVersion: 2019,
         ecmaFeatures: {
-            'impliedStrict': true,
-            'experimentalObjectRestSpread': true
+            impliedStrict: true
         },
         sourceType: 'module'
     },
     env: {
-        'node': true,
-        'es6': true
+        node: true,
+        browser: true,
+        jest: true
     },
     rules: {
-        'strict': ['error', 'never']
+        strict: ['error', 'never']
     }
 };
