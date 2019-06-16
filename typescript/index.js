@@ -22,7 +22,7 @@ module.exports = {
         '@typescript-eslint/member-ordering': [
             1,
             {
-                defaults: [
+                default: [
                     // Fields
                     'static-field', // = ['public-static-field', 'protected-static-field', 'private-static-field'])
                     'instance-field', // = ['public-instance-field', 'protected-instance-field', 'private-instance-field'])
@@ -45,7 +45,16 @@ module.exports = {
         '@typescript-eslint/no-floating-promises': 0,
         '@typescript-eslint/no-for-in-array': 2,
         '@typescript-eslint/no-inferrable-types': 0,
-        '@typescript-eslint/no-magic-numbers': ['error', { ignoreNumericLiteralTypes: true, ignoreEnum: true }],
+        '@typescript-eslint/no-magic-numbers': [
+            2,
+            {
+                ignoreNumericLiteralTypes: true,
+                // ignoreEnum: true, // not released yet
+                ignoreArrayIndexes: true,
+                enforceConst: true,
+                ignore: [1]
+            }
+        ],
         '@typescript-eslint/no-misused-new': 2,
         '@typescript-eslint/no-namespace': 2,
         '@typescript-eslint/no-non-null-assertion': 2,

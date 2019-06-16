@@ -16,9 +16,10 @@
         "compare:import": "node scripts/compare.js import",
         "compare:ts": "node scripts/compare.js ts",
         "compare:all": "yarn compare && yarn compare:react && yarn compare:import && yarn compare:ts",
-        "fmt:check": "prettier --check index.js import.js react.js typescript.js core/*.js react/*.js import/*.js",
-        "fmt": "prettier --write index.js import.js react.js typescript.js core/*.js react/*.js import/*.js",
-        "test": "yarn fmt:check && node index.js && node react/index.js && node import/index.js && node typescript/index.js",
+        "fmt:check": "prettier --check index.js typescript/*.js core/*.js react/*.js import/*.js",
+        "lint": "eslint index.js typescript/*.js core/*.js react/*.js import/*.js",
+        "fmt": "prettier --write index.js typescript/*.js core/*.js react/*.js import/*.js",
+        "test": "yarn fmt:check && yarn lint",
         "precommit": "lint-staged",
         "prepublishOnly": "yarn test"
     },
@@ -55,18 +56,14 @@
         "chalk": "^2.4.2",
         "cheerio": "^1.0.0-rc.3",
         "eslint": "^5.16.0",
-        "eslint-config-airbnb": "^17.1.0",
-        "eslint-config-airbnb-base": "^13.1.0",
         "eslint-config-prettier": "^5.0.0",
-        "eslint-import-resolver-webpack": "^0.11.1",
         "eslint-plugin-import": "^2.17.3",
         "eslint-plugin-jsx-a11y": "^6.2.1",
-        "eslint-plugin-jsx-control-statements": "^2.2.1",
         "eslint-plugin-react": "^7.13.0",
-        "eslint-plugin-standard": "^4.0.0",
         "husky": "^2.4.1",
         "json-diff": "^0.5.4",
         "lint-staged": "^8.2.1",
-        "prettier": "^1.18.2"
+        "prettier": "^1.18.2",
+        "typescript": "^3.5.2"
     }
 }

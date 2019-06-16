@@ -6,5 +6,5 @@ module.exports = {
         './possible-errors',
         './stylistic-issues',
         './variables'
-    ]
+    ].map(require.resolve)
 };

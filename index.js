@@ -1,6 +1,6 @@
 module.exports = {
     parser: '@typescript-eslint/parser',
-    extends: ['./core', './import'],
+    extends: ['./core', './import'].map(require.resolve),
     parserOptions: {
         ecmaVersion: 2019,
         ecmaFeatures: {

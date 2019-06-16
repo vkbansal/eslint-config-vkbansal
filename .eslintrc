@@ -1,0 +1,15 @@
+{
+    "extends": ["./index.js", "./react/index.js", "./typescript/index.js"],
+    "parserOptions": {
+        "project": "tsconfig.json"
+    },
+    "settings": {
+        "react": {
+            "version": "16.8"
+        }
+    },
+    "rules": {
+        "import/no-commonjs": 0,
+        "@typescript-eslint/no-magic-numbers": 0
+    }
+}
